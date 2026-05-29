@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -18,16 +18,25 @@
         >
           Strata
         </p>
-        <div class="flex flex-row items-center gap-8">
-          <p class="cursor-pointer transition-colors hover:text-white">
+        <div class="flex flex-row items-center gap-2 md:gap-8 text-slate-400">
+          <a
+            href="#functionalities"
+            class="cursor-pointer transition-colors hover:text-white"
+          >
             Funcionalidades
-          </p>
-          <p class="cursor-pointer transition-colors hover:text-white">
+          </a>
+          <a
+            href="#integrations"
+            class="cursor-pointer transition-colors hover:text-white"
+          >
             Integrações
-          </p>
-          <p class="cursor-pointer transition-colors hover:text-white">
+          </a>
+          <a
+            href="#prices"
+            class="cursor-pointer transition-colors hover:text-white"
+          >
             Preços
-          </p>
+          </a>
         </div>
       </div>
     </nav>
@@ -64,7 +73,10 @@
         class="absolute top-36 -z-10 h-96 w-96 rounded-full bg-blue-500/20 blur-3xl"
       ></div>
     </header>
-    <section class="flex flex-col items-center justify-center gap-16 py-24">
+    <section
+      id="functionalities"
+      class="flex flex-col items-center justify-center gap-16 py-24"
+    >
       <h2 class="text-2xl font-bold md:text-3xl">
         Funciona do jeito que você sempre quis.
       </h2>
@@ -100,7 +112,7 @@
           </p>
         </div>
         <div
-          class="flex h-96 flex-col items-start justify-center gap-4 rounded-xl border border-slate-800 bg-slate-900 p-8"
+          class="md:col-span-2 flex h-96 flex-col items-start justify-center gap-4 rounded-xl border border-slate-800 bg-slate-900 p-8 md:w-[calc(50%-1rem)] md:justify-self-center lg:col-span-1 lg:w-full"
         >
           <div
             class="flex h-24 w-24 items-center justify-center rounded-lg border border-blue-500/50 bg-linear-to-br from-blue-400/50 to-emerald-400/50 text-4xl"
@@ -115,7 +127,10 @@
         </div>
       </div>
     </section>
-    <section class="flex flex-col items-center justify-center gap-16 py-24">
+    <section
+      id="integrations"
+      class="flex flex-col items-center justify-center gap-16 py-24"
+    >
       <h2 class="text-2xl font-bold md:text-3xl">
         Integra-se com o seu ecossistema.
       </h2>
@@ -166,7 +181,9 @@
           Webhooks
         </div>
       </div>
-      <div class="mx-auto flex h-128 w-full max-w-xl md:max-w-2xl lg:max-w-6xl">
+      <div
+        class="mx-auto flex h-128 w-full max-w-xl px-8 md:max-w-2xl lg:max-w-6xl"
+      >
         <div
           class="relative h-full flex-1 overflow-hidden rounded-xl transition-all duration-500 hover:flex-3"
         >
@@ -211,11 +228,16 @@
         </div>
       </div>
     </section>
-    <section class="flex flex-col items-center justify-center gap-16 py-24">
+    <section
+      id="prices"
+      class="flex flex-col items-center justify-center gap-16 px-8 py-24"
+    >
       <div
         class="mx-auto flex max-w-5xl flex-col items-center justify-between gap-12 rounded-3xl border border-slate-800 bg-slate-900 p-8 md:flex-row md:p-16"
       >
-        <div class="flex flex-col text-left9 max-w-1/2">
+        <div
+          class="flex max-w-[50%] flex-col gap-2 text-center md:gap-4 md:text-left"
+        >
           <h2 class="text-2xl font-extrabold md:text-3xl">
             Pronto para ter controle total do seu servidor?
           </h2>
@@ -223,18 +245,28 @@
             Sem limite de logs, retenção de 30 dias, cabendo no seu bolso.
           </p>
         </div>
-        <div class="flex flex-col items-center md:items-end text-right">
-          <h3 class="text-xl md:text-2xl font-bold">R$49/mês</h3>
-                  <button
-          class="mt-1 cursor-pointer rounded-md bg-blue-600 px-8 py-3 font-semibold text-white shadow-sm shadow-blue-600 transition-colors hover:bg-blue-500 hover:shadow-blue-500 md:mt-4"
-        >
-          Assinar agora
-        </button>
-
+        <div class="flex flex-col items-center text-right md:items-end">
+          <h3 class="text-xl font-bold md:text-2xl">R$49/mês</h3>
+          <button
+            class="mt-1 cursor-pointer rounded-md bg-blue-600 px-8 py-3 font-semibold text-white shadow-sm shadow-blue-600 transition-colors hover:bg-blue-500 hover:shadow-blue-500 md:mt-4"
+          >
+            Assinar agora
+          </button>
         </div>
       </div>
     </section>
-    <footer class=""></footer>
+    <footer class="border-t border-slate-800 py-8">
+      <div
+        class="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-4 px-8 text-sm text-slate-500 md:flex-row"
+      >
+        <p class="">© 2026 Strata. Todos os direitos reservados.</p>
+        <div class="flex gap-4">
+          <p class="transition-colors hover:text-white">Termos de Uso</p>
+          <p class="transition-colors hover:text-white">Privacidade</p>
+          <p class="transition-colors hover:text-white">Repositório</p>
+        </div>
+      </div>
+    </footer>
   </body>
   <script type="module" src="./src/main.js"></script>
 </html>
