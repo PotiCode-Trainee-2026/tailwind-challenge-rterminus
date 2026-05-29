@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Strata</title>
   </head>
-  <body class="flex flex-col bg-slate-950 text-blue-100">
+  <body class="relative flex flex-col bg-slate-950 text-blue-100">
     <nav
       class="fixed z-999 flex h-16 w-full items-center border-b border-b-slate-800 bg-slate-950"
     >
@@ -65,7 +65,9 @@
       ></div>
     </header>
     <section class="flex flex-col items-center justify-center gap-16 py-24">
-      <h2 class="text-2xl font-bold md:text-3xl">Funcionalidades</h2>
+      <h2 class="text-2xl font-bold md:text-3xl">
+        Funciona do jeito que você sempre quis.
+      </h2>
       <div
         class="mx-auto grid w-full max-w-7xl grid-cols-1 gap-8 px-8 md:grid-cols-2 lg:grid-cols-3"
       >
@@ -113,8 +115,125 @@
         </div>
       </div>
     </section>
-    <section class=""></section>
-    <section class=""></section>
+    <section class="flex flex-col items-center justify-center gap-16 py-24">
+      <h2 class="text-2xl font-bold md:text-3xl">
+        Integra-se com o seu ecossistema.
+      </h2>
+      <div class="mx-auto flex max-w-4xl flex-wrap justify-center gap-4 px-8">
+        <div
+          class="cursor-pointer rounded-full border border-slate-800 bg-slate-900/50 px-6 py-2 text-xl text-slate-300 transition-colors hover:bg-slate-800 hover:text-white"
+        >
+          Docker
+        </div>
+        <div
+          class="cursor-pointer rounded-full border border-slate-800 bg-slate-900/50 px-6 py-2 text-xl text-slate-300 transition-colors hover:bg-slate-800 hover:text-white"
+        >
+          Kubernetes
+        </div>
+        <div
+          class="cursor-pointer rounded-full border border-slate-800 bg-slate-900/50 px-6 py-2 text-xl text-slate-300 transition-colors hover:bg-slate-800 hover:text-white"
+        >
+          AWS
+        </div>
+        <div
+          class="cursor-pointer rounded-full border border-slate-800 bg-slate-900/50 px-6 py-2 text-xl text-slate-300 transition-colors hover:bg-slate-800 hover:text-white"
+        >
+          Nginx
+        </div>
+        <div
+          class="cursor-pointer rounded-full border border-slate-800 bg-slate-900/50 px-6 py-2 text-xl text-slate-300 transition-colors hover:bg-slate-800 hover:text-white"
+        >
+          Google Cloud
+        </div>
+        <div
+          class="cursor-pointer rounded-full border border-slate-800 bg-slate-900/50 px-6 py-2 text-xl text-slate-300 transition-colors hover:bg-slate-800 hover:text-white"
+        >
+          Redis
+        </div>
+        <div
+          class="cursor-pointer rounded-full border border-slate-800 bg-slate-900/50 px-6 py-2 text-xl text-slate-300 transition-colors hover:bg-slate-800 hover:text-white"
+        >
+          Slack
+        </div>
+        <div
+          class="cursor-pointer rounded-full border border-slate-800 bg-slate-900/50 px-6 py-2 text-xl text-slate-300 transition-colors hover:bg-slate-800 hover:text-white"
+        >
+          Discord
+        </div>
+        <div
+          class="cursor-pointer rounded-full border border-slate-800 bg-slate-900/50 px-6 py-2 text-xl text-slate-300 transition-colors hover:bg-slate-800 hover:text-white"
+        >
+          Webhooks
+        </div>
+      </div>
+      <div class="mx-auto flex h-128 w-full max-w-xl md:max-w-2xl lg:max-w-6xl">
+        <div
+          class="relative h-full flex-1 overflow-hidden rounded-xl transition-all duration-500 hover:flex-3"
+        >
+          <img
+            class="h-full w-full object-cover"
+            src="./assets/docker_interface.avif"
+            alt=""
+          />
+          <div
+            class="absolute bottom-0 left-0 flex h-full w-full flex-col items-center justify-end bg-linear-to-t from-slate-950/80 to-transparent to-50% p-8"
+          >
+            <p class="text-xl font-bold text-white md:text-2xl">Docker</p>
+          </div>
+        </div>
+        <div
+          class="relative h-full flex-1 overflow-hidden rounded-xl transition-all duration-500 hover:flex-3"
+        >
+          <img
+            class="h-full w-full object-cover"
+            src="./assets/kubernetes_cluster.png"
+            alt=""
+          />
+          <div
+            class="absolute bottom-0 left-0 flex h-full w-full flex-col items-center justify-end bg-linear-to-t from-slate-950/80 to-transparent to-50% p-8"
+          >
+            <p class="text-xl font-bold text-white md:text-2xl">Kubernetes</p>
+          </div>
+        </div>
+        <div
+          class="relative h-full flex-1 overflow-hidden rounded-xl transition-all duration-500 hover:flex-3"
+        >
+          <img
+            class="h-full w-full object-cover"
+            src="./assets/slack_screenshot.jpg"
+            alt=""
+          />
+          <div
+            class="absolute bottom-0 left-0 flex h-full w-full flex-col items-center justify-end bg-linear-to-t from-slate-950/80 to-transparent to-50% p-8"
+          >
+            <p class="text-xl font-bold text-white md:text-2xl">Slack</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="flex flex-col items-center justify-center gap-16 py-24">
+      <div
+        class="mx-auto flex max-w-5xl flex-col items-center justify-between gap-12 rounded-3xl border border-slate-800 bg-slate-900 p-8 md:flex-row md:p-16"
+      >
+        <div class="flex flex-col text-left9 max-w-1/2">
+          <h2 class="text-2xl font-extrabold md:text-3xl">
+            Pronto para ter controle total do seu servidor?
+          </h2>
+          <p class="text-xl md:text-2xl">
+            Sem limite de logs, retenção de 30 dias, cabendo no seu bolso.
+          </p>
+        </div>
+        <div class="flex flex-col items-center md:items-end text-right">
+          <h3 class="text-xl md:text-2xl font-bold">R$49/mês</h3>
+                  <button
+          class="mt-1 cursor-pointer rounded-md bg-blue-600 px-8 py-3 font-semibold text-white shadow-sm shadow-blue-600 transition-colors hover:bg-blue-500 hover:shadow-blue-500 md:mt-4"
+        >
+          Assinar agora
+        </button>
+
+        </div>
+      </div>
+    </section>
     <footer class=""></footer>
   </body>
   <script type="module" src="./src/main.js"></script>
